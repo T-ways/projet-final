@@ -12,6 +12,15 @@ void main(List<String> arguments) {
 
  String pseudo = stdin.readLineSync()!;
 
+ //multiplicateur de force
+  List<double> pourcent = [1.0,0.75,0.5];
+  Random force = new Random();
+     //pourcentage de force de frappe
+      int forces = force.nextInt(2)+1;
+      var pourcentage = pourcent[forces];
+     //pourcentage de force de frappe
+  //!multiplicateur de force
+
   Player Rambo = Player(pseudo, 1, 100);
   Bot Robot = Bot('Robot', 1, 100);
 
