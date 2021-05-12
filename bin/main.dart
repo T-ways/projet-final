@@ -43,7 +43,8 @@ void main(List<String> arguments) {
        if((Robot.health < Rambo.health)){
          print("--= Le Bot a Gagné ${Rambo.pseudo}=--");
        }else{
-         print("--= ${Rambo.pseudo} a Gagné le Bot=--");
+        // print("--= ${Rambo.pseudo} a Gagné le Bot=--");
+         Rambo.playerVictory();
        }
 
      }

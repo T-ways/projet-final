@@ -6,4 +6,8 @@ class Bot{
   int health;
 
   Bot(this.name, this.life, this.health);
+  //Affichage Bot
+  displayBot(){
+    print("Afficher ${this.name}");
+  }
 }
