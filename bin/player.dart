@@ -8,7 +8,7 @@ class Player{
 
   //Affichage Player
  displayPlayer(){
-   print("Afficher ${this.pseudo}");
+   print("Afficher Player mon nom est :${this.pseudo} j ai ${this.health} Santé et ${this.strength} force ");
  }
 //Affichage Player
 
