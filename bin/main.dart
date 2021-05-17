@@ -23,10 +23,19 @@ void main(List<String> arguments) {
 
   Player Rambo = Player(pseudo, 1, 100);
   Bot Robot = Bot('Robot', 1, 100);
+  Rambo.displayPlayer();
+  Robot.displayBot();
+
+  //who player first 0 for player 1 for Bot
+  int who = force.nextInt(2);
+
 
  // int frappeBot = throwDices();
  // int frappePlayer = throwDices();
   //print('on a $frappeBot et $frappePlayer');
+
+  print(Rambo.attackBot(Robot.health));
+  print(Robot.attackPlayer(Rambo.health, Rambo.pseudo));
 
 
    while(Robot.health >=1 && Rambo.health >=1){

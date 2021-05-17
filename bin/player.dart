@@ -1,4 +1,5 @@
 import 'dices.dart';
+import 'bot.dart';
 class Player{
   int strength;
   String pseudo;
@@ -8,9 +9,9 @@ class Player{
 
   //Affichage Player
  displayPlayer(){
-   print("Afficher Player mon nom est :${this.pseudo} j ai ${this.health} Santé et ${this.strength} force ");
+   print("Afficher Player mon est :${this.pseudo} j ai ${this.health} Santé et ${this.strength} force ");
  }
-//Affichage Player
+  //Affichage Player
 
 //Victory function of player
 
@@ -22,4 +23,19 @@ playerVictory(){
 }
 
 //Function player's victory
+
+  //Attack Bot
+ attackBot(int santebot){
+//attack player to Bot
+   int frappePlayer = throwDices();
+
+   santebot = (santebot - frappePlayer);
+   print("******************Attack player***************************");
+   print("${this.pseudo} attack Bot avec $frappePlayer dommages, vie Bot est de : ${santebot}");
+   print("********************! Attack player *************************");
+ // End Attaque du player
+
+   return santebot;
+ }
+ //Attack Bot
 }
