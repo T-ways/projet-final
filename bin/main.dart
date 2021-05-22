@@ -37,6 +37,9 @@ void main(List<String> arguments) {
   print(Rambo.attackBot(Robot.health));
   print(Robot.attackPlayer(Rambo.health, Rambo.pseudo));
 
+  print(Rambo.attackBot(Robot.health));
+  print(Robot.attackPlayer(Rambo.health, Rambo.pseudo));
+
 
    while(Robot.health >=1 && Rambo.health >=1){
      //attack player to Bot

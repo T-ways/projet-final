@@ -19,6 +19,7 @@ attackPlayer(int santeAdv, String nomAdv){
   int frappeBot = throwDices();
 
   santeAdv = (santeAdv - frappeBot);
+  //
   print("--------------------Attack BOT--------------------------");
   print("The BOt attack Bot avec $frappeBot dommages, vie du ${nomAdv} est de : ${santeAdv}");
   print("--------------------! Attack BOT--------------------------");
